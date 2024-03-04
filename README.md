@@ -1,15 +1,37 @@
-# Exploring-NYC-Public-School-Test-Result-Scores
-Every year, American high school students take SATs, which are standardized tests intended to measure literacy, numeracy, and writing skills. There are three sections - reading, math, and writing, each with a maximum score of 800 points. These tests are extremely important for students and colleges, as they play a pivotal role in the admissions process.
+![Los Angeles skyline](la_skyline.jpg)
 
-Analyzing the performance of schools is important for a variety of stakeholders, including policy and education professionals, researchers, government, and even parents considering which school their children should attend.
+Los Angeles, California 😎. The City of Angels. Tinseltown. The Entertainment Capital of the World! 
 
-You have been provided with a dataset called schools.csv, which is previewed below.
+Known for its warm weather, palm trees, sprawling coastline, and Hollywood, along with producing some of the most iconic films and songs. However, as with any highly populated city, it isn't always glamorous and there can be a large volume of crime. That's where you can help!
 
-You have been tasked with answering three key questions about New York City (NYC) public school SAT performance.
+You have been asked to support the Los Angeles Police Department (LAPD) by analyzing crime data to identify patterns in criminal behavior. They plan to use your insights to allocate resources effectively to tackle various crimes in different areas.
+
+## The Data
+
+They have provided you with a single dataset to use. A summary and preview are provided below.
+
+It is a modified version of the original data, which is publicly available from Los Angeles Open Data.
+
+# crimes.csv
+
+| Column     | Description              |
+|------------|--------------------------|
+| `'DR_NO'` | Division of Records Number: Official file number made up of a 2-digit year, area ID, and 5 digits. |
+| `'Date Rptd'` | Date reported - MM/DD/YYYY. |
+| `'DATE OCC'` | Date of occurrence - MM/DD/YYYY. |
+| `'TIME OCC'` | In 24-hour military time. |
+| `'AREA NAME'` | The 21 Geographic Areas or Patrol Divisions are also given a name designation that references a landmark or the surrounding community that it is responsible for. For example, the 77th Street Division is located at the intersection of South Broadway and 77th Street, serving neighborhoods in South Los Angeles. |
+| `'Crm Cd Desc'` | Indicates the crime committed. |
+| `'Vict Age'` | Victim's age in years. |
+| `'Vict Sex'` | Victim's sex: `F`: Female, `M`: Male, `X`: Unknown. |
+| `'Vict Descent'` | Victim's descent:<ul><li>`A` - Other Asian</li><li>`B` - Black</li><li>`C` - Chinese</li><li>`D` - Cambodian</li><li>`F` - Filipino</li><li>`G` - Guamanian</li><li>`H` - Hispanic/Latin/Mexican</li><li>`I` - American Indian/Alaskan Native</li><li>`J` - Japanese</li><li>`K` - Korean</li><li>`L` - Laotian</li><li>`O` - Other</li><li>`P` - Pacific Islander</li><li>`S` - Samoan</li><li>`U` - Hawaiian</li><li>`V` - Vietnamese</li><li>`W` - White</li><li>`X` - Unknown</li><li>`Z` - Asian Indian</li> |
+| `'Weapon Desc'` | Description of the weapon used (if applicable). |
+| `'Status Desc'` | Crime status. |
+| `'LOCATION'` | Street address of the crime. |
 
 
 ## Questions
 
-1. Which NYC schools have the best math results?
-2. What are the top 10 performing schools based on the combined SAT scores?
-3. Which single borough has the largest standard deviation in the combined SAT score?
+1. Which hour has the highest frequency of crimes?
+2. Which area has the largest frequency of night crimes (crimes committed between 10pm and 3:59am)?
+3. dentify the number of crimes committed against victims by age group (0-17, 18-25, 26-34, 35-44, 45-54, 55-64, 65+).
